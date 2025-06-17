@@ -64,7 +64,7 @@
 # print("Random integer:", random.randint(1, 100))
 
 
-# print("Random float between 5 and 10:", random.uniform(5, 10))
+# print("Random float between 5 and 10:", random.uniform(5, 10)) 
 
 
 # fruits = ['apple', 'banana', 'cherry', 'orange']
@@ -117,5 +117,78 @@
 # if x > 5:
 #     if x < 15:
 #         print("x is between 5 and 15")
+
+
+
+
+# def first():
+#     print("Hello!")
+# first()
+
+
+
+# def first(name):
+#     print("Hello!",name)
+# first("madhavan")
+
+
+
+# def first(name, age):
+#     print(name, "is", age, "years old")
+
+# first(age=23, name="madhavan")
+
+
+
+
+# def square(x):
+#     return x * x
+
+# result = square(4)
+# print(result)  
+
+
+
+# def first(name="Guest"):
+#     print(f"Hello, {name}")
+
+# first()         
+# first("madhavan")  
+
+
+
+
+# def divide(a, b):
+#     try:
+#         return a / b
+#     except ZeroDivisionError:
+#         return "Cannot divide by zero"
+#     except TypeError:
+#         return "Inputs must be numbers"
+#     finally:
+#         print("Divide function was called")
+
+# print(divide(10, 0))    
+# print(divide(10, 'a'))  
+# print(divide(10, 2))    
+
+
+
+
+def get_element():
+    try:
+        numbers = [10, 20, 30, 40]
+        index = int(input("Enter the index (0 to 3): "))
+        print("Element at index", index, "is", numbers[index])
+    except ValueError:
+        print("Please enter a valid number.")
+    except IndexError:
+        print("Index out of range. Please enter between 0 and 3.")
+    finally:
+        print("Finished trying to get element.")
+
+
+get_element()
+
 
 
