@@ -175,20 +175,34 @@
 
 
 
-def get_element():
-    try:
-        numbers = [10, 20, 30, 40]
-        index = int(input("Enter the index (0 to 3): "))
-        print("Element at index", index, "is", numbers[index])
-    except ValueError:
-        print("Please enter a valid number.")
-    except IndexError:
-        print("Index out of range. Please enter between 0 and 3.")
-    finally:
-        print("Finished trying to get element.")
+# def get_element():
+#     try:
+#         numbers = [10, 20, 30, 40]
+#         index = int(input("Enter the index (0 to 3): "))
+#         print("Element at index", index, "is", numbers[index])
+#     except ValueError:
+#         print("Please enter a valid number.")
+#     except IndexError:
+#         print("Index out of range. Please enter between 0 and 3.")
+#     finally:
+#         print("Finished trying to get element.")
 
 
-get_element()
+# get_element()
 
 
+# from pricing import say_hello , get_final_price
 
+# print(say_hello())
+# final_price = get_final_price(200)
+# print(final_price)
+
+# from store.pricing import say_hello, get_final_price
+# print(say_hello())
+# final_price = get_final_price(200)
+# print(final_price)
+
+import pandas as pd 
+
+df = pd.DataFrame(["one","two","three","four","five"])
+print(df)
